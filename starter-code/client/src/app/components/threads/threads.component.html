@@ -1,0 +1,12 @@
+<div class="user">
+  <h3>Log in or register</h3>
+  <a [routerLink]="['/login']">Login</a>
+  <a [routerLink]="['/signup']">Sign Up</a>
+</div>
+
+<h1>All Threads</h1>
+<div class="threads" *ngFor="let thread of threadList">
+  <h2>{{thread.title}}</h2>
+  <p>{{thread.content}}</p>
+  <p>{{thread.date}}</p>
+</div>
